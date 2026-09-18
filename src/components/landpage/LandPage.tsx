@@ -23,7 +23,7 @@ const projectsData: Project[] = [
     id: 1,
     title: "Users Data Collection Website",
     description:
-      "A website for storing users data such as name, email and records",
+      "A website for storing users data such as name, email and file records",
     tags: ["React", "TypeScript", "CSS Modules", "MongoDB"],
     img: image2,
     link: "#",
@@ -171,9 +171,6 @@ export const LandPage: React.FC = () => {
                     </span>
                   ))}
                 </div>
-                <a href={project.link} className="project-link">
-                  View Project &rarr;
-                </a>
               </div>
             </div>
           ))}
