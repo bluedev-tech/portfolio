@@ -61,20 +61,20 @@ const skillsData: SkillCategory[] = [
 
 export const LandPage: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [submitted, setSubmitted] = useState<boolean>(false);
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
+  // const [submitted, setSubmitted] = useState<boolean>(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (formData.name && formData.email && formData.message) {
-      setSubmitted(true);
-      setFormData({ name: "", email: "", message: "" });
-    }
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   if (formData.name && formData.email && formData.message) {
+  //     setSubmitted(true);
+  //     setFormData({ name: "", email: "", message: "" });
+  //   }
+  // };
 
   return (
     <div className="portfolio-container">
