@@ -40,7 +40,6 @@ html {
   flex-direction: column;
 }
 
-/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -96,7 +95,6 @@ html {
   transition: var(--transition);
 }
 
-/* Hero Section */
 .hero-section {
   padding: 10rem 5% 6rem 5%;
   display: flex;
@@ -143,7 +141,6 @@ html {
   gap: 1rem;
 }
 
-/* Buttons */
 .btn {
   padding: 0.75rem 1.8rem;
   border-radius: 8px;
@@ -177,7 +174,6 @@ html {
   border-color: var(--text-muted);
 }
 
-/* Sections */
 .section {
   padding: 5rem 5%;
   max-width: 1100px;
@@ -193,7 +189,6 @@ html {
   letter-spacing: -0.5px;
 }
 
-/* Cards & Layouts */
 .about-card,
 .skill-category-card,
 .project-card,
@@ -284,7 +279,6 @@ img {
   font-size: 0.9rem;
 }
 
-/* Contact Form */
 .contact-card {
   max-width: 650px;
   margin: 0 auto;
@@ -337,7 +331,6 @@ img {
   color: var(--accent);
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding: 2rem;
@@ -347,7 +340,6 @@ img {
   margin-top: auto;
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .nav-links {
     display: none;

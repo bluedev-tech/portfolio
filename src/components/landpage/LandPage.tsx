@@ -61,20 +61,6 @@ const skillsData: SkillCategory[] = [
 
 export const LandPage: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
-  // const [formData, setFormData] = useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // });
-  // const [submitted, setSubmitted] = useState<boolean>(false);
-
-  // const handleSubmit = (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   if (formData.name && formData.email && formData.message) {
-  //     setSubmitted(true);
-  //     setFormData({ name: "", email: "", message: "" });
-  //   }
-  // };
 
   return (
     <div className="portfolio-container">
@@ -104,7 +90,6 @@ export const LandPage: React.FC = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <header className="hero-section">
         <div className="hero-badge">Available for New Projects</div>
         <h1>
@@ -124,7 +109,6 @@ export const LandPage: React.FC = () => {
         </div>
       </header>
 
-      {/* About Section */}
       <section id="about" className="section">
         <h2 className="section-title">About Me</h2>
         <div className="about-card">
@@ -137,7 +121,6 @@ export const LandPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
       <section id="skills" className="section">
         <h2 className="section-title">Core Skills</h2>
         <div className="skills-grid">
@@ -154,7 +137,6 @@ export const LandPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
       <section id="projects" className="section">
         <h2 className="section-title">Featured Projects</h2>
         <div className="projects-grid">
@@ -176,8 +158,6 @@ export const LandPage: React.FC = () => {
           ))}
         </div>
       </section>
-
-      {/* Contact Section */}
       <section id="contact" className="section">
         <h2 className="section-title">Get In Touch</h2>
         <div className="contact-card">
@@ -191,61 +171,8 @@ export const LandPage: React.FC = () => {
               My LinkedIn Profile
             </a>
           </div>
-          {/* {submitted ? (
-            <div className="success-message">
-              <h3>Thank you!</h3>
-              <p>
-                Your message has been sent successfully. I'll get back to you
-                soon.
-              </p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="contact-form">
-              <div className="form-group">
-                <label>Name</label>
-                <input
-                  type="text"
-                  value={formData.name}
-                  onChange={(e) =>
-                    setFormData({ ...formData, name: e.target.value })
-                  }
-                  required
-                  placeholder="Jane Doe"
-                />
-              </div>
-              <div className="form-group">
-                <label>Email</label>
-                <input
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
-                  }
-                  required
-                  placeholder="jane@example.com"
-                />
-              </div>
-              <div className="form-group">
-                <label>Message</label>
-                <textarea
-                  rows={4}
-                  value={formData.message}
-                  onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
-                  required
-                  placeholder="How can we work together?"
-                ></textarea>
-              </div>
-              <button type="submit" className="btn primary-btn submit-btn">
-                Send Message
-              </button>
-            </form>
-          )} */}
         </div>
       </section>
-
-      {/* Footer */}
       <footer className="footer">
         <p>
           &copy; {new Date().getFullYear()} Ugwoke Chigozie. Built with React &
